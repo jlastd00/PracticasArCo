@@ -18,7 +18,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    Alu alu;
+    Alu *alu;
 
 private slots:
     void on_buttonCalcular_clicked();

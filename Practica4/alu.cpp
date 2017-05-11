@@ -118,18 +118,47 @@ QString Alu::getHexNumber2(){
 void Alu::sum(){
 
 
-
 }
 
 void Alu::multiply(){
+/*
+    char sigOp1 = number1->getSign();
+    char sigOp2 = number2->getSign();
+    char expOp1[8] = number1->getExponent();
+    char expOp2[8] = number2->getExponent();
+    char mantOp1[23] = number1->getMantisa();
+    char mantOp2[23] = number2->getMantisa();
 
+    char resultSig, resultExp[8], resultMant[23];
 
+    if (sigOp1 == sigOp2) {
+        resultSig = '0';
+    }
+    else {
+        resultSig = '1';
+    }
+*/
 
 }
 
 void Alu::division(){
+/*
+    char sigOp1 = number1->getSign();
+    char sigOp2 = number2->getSign();
+    char expOp1[8] = number1->getExponent();
+    char expOp2[8] = number2->getExponent();
+    char mantOp1[23] = number1->getMantisa();
+    char mantOp2[23] = number2->getMantisa();
 
+    char resultSig, resultExp[8], resultMant[23];
 
-
+    if (sigOp1 == sigOp2) {
+        resultSig = '0';
+    }
+    else {
+        resultSig = '1';
+    }
+*/
 }
+
 
