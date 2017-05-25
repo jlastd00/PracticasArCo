@@ -17,7 +17,7 @@ public:
     QString getHexNumber1();
     QString getHexNumber2();
     void sum();
-    void multiply();
+    NumberBinary *multiply();
     void division();
 
 private:

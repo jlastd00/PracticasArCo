@@ -17,9 +17,13 @@ public:
     int getNumberOfExponent();
     void sum(NumberBinary *otherNumber);
 
+    void setSign(char newSign);
+    void setExponent(char exp[]);
+    void setMantisa(char mant[]);
+
 private:
     void setSign();
-    void setSign(char newSign);
+
     void setExponent();
     void setMantisa();
     char* setA2(char *oldMantisa);

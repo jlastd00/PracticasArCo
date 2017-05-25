@@ -56,11 +56,11 @@ void MainWindow::on_buttonCalcular_clicked() {
         }
         else if (operation == "Producto") {
 
-            //NumberBinary result = alu->multiply();
+            NumberBinary *result = alu->multiply();
 
-            ui->valueResultDec->setText("Resultado OP1 x OP2 en decimal");
-            ui->valueResultBCF->setText("Resultado OP1 x OP2 en código BCF");
-            ui->valueResultHex->setText("Resultado OP1 x OP2 en hexdecimal");
+            ui->valueResultDec->setText(QString::number(result->getNumberDec()));
+            ui->valueResultBCF->setText(result->getNumberBinary());
+            ui->valueResultHex->setText(result->getNumberHex());
         }
         else {
 

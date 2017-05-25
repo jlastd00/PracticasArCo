@@ -249,6 +249,20 @@ void NumberBinary::setSign(char newSign){
 
 }
 
+void NumberBinary::setExponent(char exp[]) {
+
+    for (int i = 0; i < 8; i++) {
+        exponent[i] = exp[i];
+    }
+}
+
+void NumberBinary::setMantisa(char mant[]) {
+
+    for (int i = 0; i < 8; i++) {
+        mantisa[i] = mant[i];
+    }
+}
+
 void NumberBinary::setSign(){
 
     if(numberDecimal<0){
@@ -433,7 +447,7 @@ int NumberBinary::getNumberOfExponent(){
 }
 
 void NumberBinary::sum(NumberBinary *otherNumber){
-
+/*
     char* A;
     char* B;
     char* P;
@@ -445,10 +459,9 @@ void NumberBinary::sum(NumberBinary *otherNumber){
     int st = 0;
     int d = 0;
 
-    /**
-     * Comprobamos cual de los dos numeros es mayor y si son de signo diferente calculamos el complemento
-     * a2 de B
-     */
+
+    // Comprobamos cual de los dos numeros es mayor y si son de signo diferente calculamos el complemento
+    // a2 de B
     if(getNumberOfExponent()<otherNumber->getNumberOfExponent()) {
 
         A = otherNumber->getMantisa();
@@ -484,9 +497,8 @@ void NumberBinary::sum(NumberBinary *otherNumber){
 
     P = B;
 
-    /**
-     * Asignamos los bit de guarda, redondeo y sticky
-     */
+    // Asignamos los bit de guarda, redondeo y sticky
+    //
     if (d-1>=0){
 
         g = P[d-1];
@@ -507,5 +519,5 @@ void NumberBinary::sum(NumberBinary *otherNumber){
         //P
 
     }
-
+*/
 }
